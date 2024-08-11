@@ -1,0 +1,47 @@
+
+#container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+  }
+
+#question1 {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s steps(18, end) forwards,
+    blink 2s 4;
+}
+
+#question2 {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    max-width: fit-content;
+    width: 0;
+    animation: typing 6s 8s steps(20, end) forwards,
+    blink 2s 8s 2;
+}
+
+#question3 {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    max-width: fit-content;
+    width: 0;
+    animation: typing 5s 14s steps(18, end) forwards,
+    blink 2s 14s infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    from { border-right-style:solid  }
+    to { border-right-color: rgb(127, 0, 0) }
+  }
+
+ 

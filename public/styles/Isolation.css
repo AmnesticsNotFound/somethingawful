@@ -1,0 +1,66 @@
+#page2 {
+    background-color: white;
+    width:100vw;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    background-size:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: blackout 5s forwards,
+    fadeIn 15s 5s forwards,
+    addBackground 1s 5s forwards;
+}
+video {
+    opacity: 0;
+    width:100vw;
+    height:80vh;
+    max-width:5120px;
+    max-height:1440px;
+    padding:0px;
+    margin:0px;
+    animation: fadeIn 15s 5s forwards,
+    fadeOut 15s 70s forwards
+
+}
+#question {
+    overflow: hidden;
+    
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s 61s steps(15, end) forwards,
+    blink2 2s 2 61s,
+    fadeOut 15s 75s forwards;
+}
+source {
+    width:100vw;
+    height:80vh;
+    max-width:5120px;
+    max-height:1440px;
+}
+@keyframes fadeIn{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes fadeOut{
+    from {opacity: 100%;}
+    to {opacity:0%;}
+}
+
+@keyframes blackout {
+    from {background-color: white;}
+    to {background-color: black;}
+}
+
+@keyframes addBackground {
+    from {background-image: url("client/src/assets/Encounter.mp4");}
+    to {background-image: url("/client/src/assets/Encounter.mp4");}
+}
+
+@keyframes blink2 {
+    from {border-right: .15em solid black; }
+    to { border-right-color: rgb(127, 0, 0) }
+  }

@@ -1,0 +1,124 @@
+
+#page {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+#door {
+    border-style:solid;
+    border-color:white;
+    width:35vh;
+    height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:right;
+    
+    
+    
+}
+.glow:hover {
+  box-shadow: 0px 10px 10px 5px rgb(255, 255, 255);
+}
+.doorExpand {
+
+  animation: expand 50s 1 4s;
+
+}
+
+.doorOpen {
+
+    animation: openDoor 8s forwards,
+    envelop 6s 8s forwards;
+}
+
+.whiteout {
+    animation: openDoor 6s 4s forwards;
+}
+#knobBase {
+    border-style:solid;
+    border-color:white;
+    border-radius:100px;
+    width:3vh;
+    height:3vh;
+    margin-right:1vh;
+    margin-top:10vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#knob {
+    border-style:solid;
+    border-color:white;
+    border-radius:100px;
+    width:1.5vh;
+    height:1.5vh;
+    
+}
+
+#container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+  }
+
+#line1 {
+    overflow: hidden;
+    border-right: .15em ;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s 10s steps(18, end) forwards,
+    blink 2s 10s 4;
+}
+
+#line2 {
+    overflow: hidden;
+    border-right: .15em ;
+    white-space: nowrap;
+    max-width: fit-content;
+    width: 0;
+    animation: typing 6s 40s steps(21, end) forwards,
+    blink 2s 40s 3;
+}
+
+.makeVisible {
+    visibility: visible;
+}
+.makeInvisible {
+    visibility: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes openDoor {
+    from {background-color: black; }
+    to { background-color: white}
+  }
+
+  @keyframes blink {
+    from { border-right: .15em solid black}
+    to { border-right: .15em solid rgb(127, 0, 0) }
+  }
+
+  @keyframes expand {
+    from {
+        transform:scale(0.01);
+      }
+      to {
+        transform:scale(1);
+      }
+    }
+
+    @keyframes envelop {
+        from {
+            transform:scale(1);
+          }
+          to {
+            transform:scale(10);
+          }
+        }
