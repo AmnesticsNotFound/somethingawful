@@ -51,7 +51,7 @@ function Incantation() {
     //increase the volume of the aeration file over time for maximum spooks
         let timer = 100;
         setTimeout(function() {
-            for (let i = 0; i < 99; ++i) {
+            for (let i = 0; i < 49; ++i) {
                 setTimeout(function () {
                     aeration.volume = aeration.volume + 0.01;
                     
