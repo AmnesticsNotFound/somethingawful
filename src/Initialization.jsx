@@ -21,7 +21,7 @@ function Initialization() {
 
   return (
     <div id="page">
-      <button onClick={initiate}></button>
+      <button onClick={initiate} style={{color: "white"}}></button>
     </div>
   )
 }
