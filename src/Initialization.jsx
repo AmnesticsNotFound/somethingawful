@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import {Outlet, Route, useNavigate} from 'react-router-dom';
 import '/public/styles/App.css';
+import '/public/styles/Initialization.css';
 
-
+import eye from './assets/eye.jpg';
   
 function Initialization() {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ function Initialization() {
 
   return (
     <div id="page">
-      <button onClick={initiate} style={{backgroundColor: "white"}}></button>
+      <img onClick={initiate} id="eye" src={eye}/>
     </div>
   )
 }

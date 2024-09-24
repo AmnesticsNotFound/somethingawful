@@ -40,11 +40,29 @@ source {
     max-width:5120px;
     max-height:1440px;
 }
+
+#page2 img {
+    
+     float: left;
+     position:absolute;
+     opacity:0%;
+     animation: fadeInBrief 10s 72s steps(15, end) forwards,
+     fadeOutBrief 20s 84s steps(15, end) forwards
+
+}
 @keyframes fadeIn{
     from {opacity: 0%;}
     to {opacity: 100%;}
 }
+@keyframes fadeInBrief{
+    from {opacity: 0%;}
+    to {opacity: 5%;}
+}
 
+@keyframes fadeOutBrief{
+    from {opacity: 5%;}
+    to {opacity:0%;}
+}
 @keyframes fadeOut{
     from {opacity: 100%;}
     to {opacity:0%;}

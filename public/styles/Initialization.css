@@ -1,0 +1,16 @@
+#eye {
+    aspect-ratio: 4/3;
+    width:10vw;
+    animation: fadeOut 5s 0s infinite alternate;
+}
+
+#eye:hover {
+    cursor: pointer;
+
+  }
+
+  
+  
+
+      
+ 
