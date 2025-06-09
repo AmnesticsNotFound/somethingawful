@@ -1,10 +1,15 @@
 # somethingAwful
 
-You have [company](https://somethingawful.netlify.app/). You do know how to treat a guest?
+You have [company](https://somethingawful.netlify.app/).
+# somethingAwful
 
-# somethingawful
-# somethingawful
-# somethingawful
-# somethingawful
-# somethingawful
-# somethingawful
+You have [company](https://somethingawful.netlify.app/).
+# somethingAwful
+
+You have [company](https://somethingawful.netlify.app/).
+# somethingAwful
+
+You have [company](https://somethingawful.netlify.app/).
+# somethingAwful
+
+You have [company](https://somethingawful.netlify.app/).
